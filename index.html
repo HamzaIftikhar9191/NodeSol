@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodesol</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fontawesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+      integrity="INTEGRITY_STRING"
+      crossorigin="anonymous"
+    />
+    <!-- UCP.css -->
+    <link rel="stylesheet" href="Nodesol.css" />
+  </head>
+  <body>
+    <!-- Navbar + carousel -->
+    <div class="container-fluid p-0 m-0">
+      <img
+        class="img-fluid py-4 ms-3 ms-md-5 cl52 d-lg-none"
+        src="images/logo.webp"
+        width="155px"
+      />
+      <nav class="navbar navbar-expand-lg text-white cl51">
+        <img
+          class="img-fluid py-lg-2 d-none d-lg-block"
+          style="margin-left: 75px"
+          src="images/logo.webp"
+          width="155px"
+        />
+        <div class="container-fluid pe-lg-0">
+          <button
+            class="navbar-toggler pt-lg-4 ps-lg-0 mt-3 cl53"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-dark navbar-toggler-icon"></span>
+          </button>
+          <a
+            class="btn btn-primary-small bg-primary mt-3 ms-4 d-lg-none rounded-0"
+          >
+            <i class="fa fa-rocket text-light"></i
+          ></a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item pt-lg-2 cl54 cl50">Home</li>
+              <li class="nav-item pt-lg-2 cl54">About US</li>
+              <li class="nav-item pt-lg-2 cl54">Our Services</li>
+              <li class="nav-item pt-lg-2 cl54">Work</li>
+              <li class="nav-item pt-lg-2 cl54">Blog</li>
+              <li class="nav-item pt-lg-2 cl54">Career</li>
+              <li class="nav-item pt-lg-2 pe-3">Cantact Us</li>
+              <div class="">
+                <a class="btn btn-primary d-none d-lg-block">
+                  <i class="fa fa-rocket me-1 p-1"></i>FREE QUOTE</a
+                >
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slide-a.jpg" class="d-block w-100 object-fit-cover i1" />
+            <div class="carousel-caption pb-5 pb-md-5 mb-md-5 pb-lg-0 mb-lg-0">
+              <div class="grad grad1 fw-bolder mb-lg-4">
+                Innovative Quality Solutions
+              </div>
+              <p class="cl7 c1 mt-3 mt-lg-0">
+                We are a values driven organization. Our values reflect the
+                thinking of our founder.
+              </p>
+              <div class="mb-md-3 pb-md-2 mb-lg-4 pb-lg-0 mt-md-5 mt-lg-0">
+                <a class="btn btn-primary px-3 mt-lg-4 mt-sm-0 mb-md-5 mb-lg-5">
+                  <i class="fa-solid fa-mug-hot pe-2"></i>GET STARTED</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide-b.jpg" class="d-block w-100 object-fit-cover i1" />
+            <div class="carousel-caption pb-4 pb-md-3 mb-md-5 pb-lg-5 mb-lg-5">
+              <div class="grad grad2 fw-bolder mb-lg-4 pb-md-2">
+                We bring cutting edge Digital Solutions
+              </div>
+              <p class="cl7 c1 mt-3 mb-4 mb-md-2 mt-md-1 mt-lg-0">
+                We are idea-driven, working with a strong focus on design and
+                user experience. That's what your brand and audience deserve.
+              </p>
+              <div class="mb-md-4 mb-lg-0">
+                <a class="btn btn-primary px-3 mt-md-4 mt-sm-0 mb-md-5 mb-lg-0">
+                  <i class="fa-solid fa-mug-hot pe-2"></i>GET STARTED</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev d-none d-md-block"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next d-none d-md-block"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Nodesol -->
+    <div class="container-fluid" style="position: relative; overflow: hidden">
+      <div class="row bi1">
+        <div
+          class="col-lg-4 bg-white d-none d-lg-block"
+          style="height: 600px; border-radius: 0 0 70px 0"
+        >
+          <div class="row justify-content-start">
+            <div class="col-lg-12 cl1 bg-white"></div>
+          </div>
+        </div>
+        <div class="col-lg-5 bg-white cl2 d-none d-lg-block">
+          <div class="row">
+            <div class="col-lg-12 cl3">
+              We are
+              <span class="c3" style="font-size: 78px; font-weight: 800"
+                >NODESOL</span
+              ><br />
+            </div>
+            <div class="col-lg-12 pt-lg-4" style="font-size: 13px">
+              NodeSol is the newest incarnation of our parent company,
+              FiberTechOnline, which has been working with US clients for over a
+              decade providing engineering consulting to small and medium sized
+              businesses. We are now taking the best of FiberTech to the
+              enterprise level, providing Web & App Development, DevOps,
+              Consulting, Dedicated Resources, Digital Marketing services and
+              more. With enterprise projects comes a new level of auditing,
+              security, and enhanced protocol for protecting your assets and
+              your remote staff with consideration for confidentiality,
+              compliance and risk.
+              <br /><br /><br /><br />
+              <button
+                type="button"
+                class="btn btn-primary btn-lg rounded-2"
+                style="padding-left: 30px; padding-right: 30px; font-size: 14px"
+              >
+                DROP US A <br />
+                LINE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-4 p-md-5 mt-5 mb-5 me-md-3 ms-md-2 m-lg-0 p-lg-0">
+        <div class="col-12 cl4 d-lg-none">
+          We are <br />
+          <span class="cl5">NODESOL</span><br />
+        </div>
+        <div class="col-12 pt-4 cl6 d-lg-none">
+          NodeSol is the newest incarnation of our parent company,
+          FiberTechOnline, which has been working with US clients for over a
+          decade providing engineering consulting to small and medium sized
+          businesses. We are now taking the best of FiberTech to the enterprise
+          level, providing Web & App Development, DevOps, Consulting, Dedicated
+          Resources, Digital Marketing services and more. With enterprise
+          projects comes a new level of auditing, security, and enhanced
+          protocol for protecting your assets and your remote staff with
+          consideration for confidentiality, compliance and risk.
+          <br /><br /><br />
+          <button type="button" class="btn btn-primary btn-lg rounded-2 cl6">
+            DROP US A LINE
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Main Part -->
+    <div class="container-fluid">
+      <div class="row justify-content-center bg3">
+        <div class="col-md-11">
+          <!-- Our Services -->
+          <div class="row pt-5 mt-5 mb-md-5">
+            <div class="col-md-9 ps-lg-4 mt-lg-5">
+              <div class="row justify-content-start">
+                <div
+                  class="col-12 col-md-9 col-lg-5 cl8 ps-5 ps-lg-4 ps-md-0 ms-md-0 text-white fw-bolder"
+                >
+                  Our Services
+                </div>
+                <div class="col-12 col-md-12 text-white ps-0 ps-lg-4 pt-4 cl9">
+                  We strive to lead in the inception, design and development of
+                  most advanced business solutions, including Software
+                  development, Enterprise Applications, Integrations, Web,
+                  Mobility and E-commerce.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-3 pb-4 pb-md-0 pt-4 ps-md-2 pt-md-5 mt-md-4 mt-lg-5 p1"
+            >
+              <button class="btn btn-primary my-3 px-md-4 px-lg-3 mt-lg-4">
+                <a class="btn primary-button text-white"
+                  ><i class="fa-sharp fa-light fa-grid-2"></i> View All</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="row pb-5 mb-5 px-lg-4">
+            <div class="col-12 col-md-6 ps-md-0 ps-lg-2">
+              <div class="position-relative mb-4 pb-3 cardhover">
+                <div class="bg1 text-center cl11">
+                  <div class="pt-5 grad">
+                    <i class="fa-solid fa-code fa-2x py-1 fa-3x grad"></i>
+                  </div>
+                  <div class="fw-bold text-white pt-3 cl12">
+                    DevOps Consultation & Automation
+                  </div>
+                  <div class="pt-2 mx-5 cl10">
+                    We are experts in orchestrating containers and automating
+                    deployment to achieve project delivery at scale. we offer
+                    Kubernetes consulting services to companies with an aim to
+                    help them speed up their development and deployment process,
+                    improve productivity and reduce operational cost. Kubernetes
+                    to support several container runtimes such as Docker and all
+                    major cloud platforms makes it the most popular and
+                    in-demand container orchestration tool. By associating with
+                    us, we help you to reap the benefits of Kubernetes
+                    technology by ensuring faster application development and
+                    delivery.
+                  </div>
+                </div>
+                <div class="bg3 backdiv"></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="position-relative mb-4 pb-3 cardhover">
+                <div class="bg1 text-center cl11">
+                  <div class="pt-5">
+                    <i
+                      class="fa-solid fa-mobile-screen-button fa-2x py-1 fa-3x grad"
+                    ></i>
+                  </div>
+                  <div class="fw-bold text-white pt-3 cl12">
+                    Custom Software Development
+                  </div>
+                  <div class="pt-2 mx-5 cl10">
+                    NodeSol Offers full-cycle web & mobile application
+                    development services for start-ups, mid-level businesses and
+                    enterprises. Our experts are well-versed in the latest
+                    technologies and skilled in using cutting-edge engineering
+                    tools. We build a high-end app that will accommodate your
+                    industry-specific business requirements. We create, deploy
+                    and maintain native, web-based and hybrid applications
+                    accustomed to our client needs. Beside software engineers,
+                    we employ seasoned project managers, business analysts , and
+                    app strategists.
+                  </div>
+                </div>
+                <div class="bg3 backdiv"></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 ps-md-0 ps-md-0 ps-lg-2">
+              <div class="position-relative mb-4 pb-3 cardhover">
+                <div class="bg1 text-center cl11">
+                  <div class="pt-5">
+                    <i class="fa fa-layer-group fa-2x py-1 fa-3x grad"></i>
+                  </div>
+                  <div class="fw-bold text-white pt-3 cl12">UI/UX Design</div>
+                  <div class="pt-2 mx-5 cl10">
+                    Our expert UI designers work to convert low-fidelity screens
+                    created by UX into final design interfaces. We work closely
+                    with our clients to define, design and develop
+                    transformative user experiences across all platforms. The
+                    entire process often involves studying and understanding
+                    brand guidelines to create user-friendly and aesthetically
+                    pleasing user interfaces. Our compelling designs and
+                    engaging user experience stand out to make the impact and
+                    win the audience's attention.
+                  </div>
+                </div>
+                <div class="bg3 backdiv"></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="position-relative mb-4 pb-3 cardhover">
+                <div class="bg1 text-center cl11">
+                  <div class="pt-5">
+                    <i class="fa-solid fa-chart-line fa-2x py-1 fa-3x grad"></i>
+                  </div>
+                  <div class="fw-bold text-white pt-3 cl12">
+                    Digital Marketing
+                  </div>
+                  <div class="pt-2 mx-5 cl10">
+                    NodeSol is dedicated to learning about and understanding
+                    your business. By building a relationship with each of our
+                    clients, we can ensure our marketing strategy is built with
+                    the sole focus of solving the problems your business faces.
+                    We are committed to using the best practices and staying on
+                    top of the latest innovations in digital marketing.
+                    Marketing strategies are being developed every day to find
+                    new ways to reach web users with the right marketing
+                    message. Whether it's a specialized SEO service, paid
+                    advertising campaign, new ways to improve search results, we
+                    are constantly looking for the newest and most innovative
+                    ways to connect your brand with an online audience.
+                  </div>
+                </div>
+                <div class="bg3 backdiv"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Capabilities -->
+      <div class="row justify-content-center bg2 cl16">
+        <div class="position-absolute p-0">
+          <img src="images/left_shape2.png" />
+        </div>
+        <div class="col-12 text-center c2 pt-5 mt-5" style="z-index: 1">
+          <div class="fw-bold pt-4 cl17">Our Technological Capabilities</div>
+          <div class="pt-2 pt-md-0 cl18">
+            We offer only well-recognized and time-tested technologies to
+            support your business goals.
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-11 col-lg-10">
+              <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 cl15">
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 pt-3 mt-5 cl14 cl19">
+                      <img src="images/img1.png" width="110" height="110" />
+                    </div>
+                    <div class="col-md-12 pt-3 fw-bold">QUASAR</div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 cl15">
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 pt-3 mt-5 cl14 cl19">
+                      <img src="images/img2.png" width="110" height="110" />
+                    </div>
+                    <div class="col-md-12 pt-3 fw-bold">LARAVEL</div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 cl15">
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 pt-3 mt-5 cl14 cl19">
+                      <img src="images/img3.png" class="cl20" />
+                    </div>
+                    <div class="col-md-12 pt-3 fw-bold">NODE.JS</div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 cl15">
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 pt-3 mt-5 cl14 cl19">
+                      <img src="images/img4.png" width="110" height="110" />
+                    </div>
+                    <div class="col-md-12 pt-3 fw-bold">VUE.JS</div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 cl15">
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 pt-3 mt-5 cl14 cl19">
+                      <img src="images/img5.png" class="cl20" />
+                    </div>
+                    <div class="col-md-12 pt-3 fw-bold">REACT</div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 cl15">
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 pt-3 mt-5 cl14 cl19">
+                      <img src="images/img6.png" width="110" height="110" />
+                    </div>
+                    <div class="col-md-12 pt-3 fw-bold">KUBERNETES</div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 cl15">
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 pt-3 mt-5 cl14 cl19">
+                      <img src="images/img7.png" class="cl20" />
+                    </div>
+                    <div class="col-md-12 pt-3 fw-bold">DOCKER</div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 cl15">
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 pt-3 mt-5 cl14 cl19">
+                      <img src="images/img8.png" width="110" height="110" />
+                    </div>
+                    <div class="col-md-12 pt-3 fw-bold">WORDPRESS</div>
+                  </div>
+                </div>
+                <div class="cl13">
+                  <img src="images/right-shape2.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Quasar -->
+      <div class="row justify-content-center py-lg-5 bi2 cl25">
+        <div
+          class="col-12 col-md-5 col-lg-4 pt-lg-5 mt-lg-5 pb-lg-5 mb-lg-5 pe-lg-5 cl21"
+        >
+          <img class="me-md-4 me-lg-3 cl26 rotate1" src="images/quasar-logo-2.png" />
+        </div>
+        <div
+          class="col-11 col-md-7 col-lg-8 ps-md-4 pt-lg-5 mt-lg-2 ps-lg-5 pe-lg-5"
+        >
+          <div class="c3 cl22">Quasar Platinum Sponsor</div>
+          <div class="text-white pt-3 pt-lg-2 pe-md-4 pe-lg-0 cl23">
+            We are technical sponsors for Quasar, the Open source multi-platform
+            development framework based on Vue.js
+          </div>
+          <div class="c3 pt-3 pt-md-4 pt-lg-3 pe-md-4 pe-lg-0 cl24">
+            We contribute to one of the most promising projects of these times,
+            integrating cutting-edge technologies particularly requested among
+            enterprises.
+          </div>
+          <div class="pt-4 pt-lg-3">
+            <a
+              type="button"
+              class="btn btn-warning btn-lg rounded-1"
+              style="font-size: 16px"
+              >DISCOVER QUASAR</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Industry -->
+      <div class="row justify-content-center bi3">
+        <div class="col-md-11 col-l g-10">
+          <div class="row justify-content-center pt-lg-4 pb-lg-4">
+            <div class="col-md-12 col-lg-4 pt-5">
+              <div class="grad pt-4 cl31">INDUSTRIES WE HAVE WORKED WITH</div>
+              <div class="pt-4 cl29">
+                Transforming Industries Through Tailored Software Solutions
+              </div>
+              <div class="pt-4 pb-4 cl30">
+                At Nodesol, we pride ourselves on delivering exceptional
+                software development services tailored to meet the unique needs
+                of various industries. Our team of skilled developers has
+                extensive experience collaborating with clients across various
+                sectors, enabling us to provide industry specific solutions that
+                drive innovation, efficiency, and growth.
+              </div>
+            </div>
+            <div class="col-10 col-md-11 col-lg-8 pb-4 pb-lg-0">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-12 pt-lg-5 pb-5">
+                  <div class="row gy-4">
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry1.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            Fintech <br />
+                            Industry
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry2.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            Real Estate & <br />
+                            Construction
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry3.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            E-commerce <br />
+                            and Retail
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry4.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            Education <br />
+                            Industry
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry5.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            Travel and <br />
+                            Hospitality
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry6.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            Healthcare <br />
+                            Industry
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry7.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            Transportation <br />
+                            and Logistics
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry8.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            Consulting <br />
+                            Providers
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="py-4 cl27">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <img
+                              src="images/industry9.svg"
+                              width="63px"
+                              height="55px"
+                            />
+                          </div>
+                          <div class="col-12 text-center py-2 cl28">
+                            Non-Profit <br />
+                            Organizations
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Successful Product -->
+      <div class="row justify-content-center bg-black">
+        <div class="col-11 col-lg-5 pt-5 mt-lg-5 cl34">
+          <div class="grad pt-lg-3 cl33">Build a Successful Product Today</div>
+          <div class="c4 pt-3 pb-lg-1 cl35">
+            We are driven by creativity. We create innovative things to help you
+            achieve better results and consolidate yourself in the market.
+          </div>
+          <div>
+            <a class="btn btn-primary mb-5 mt-3 mt-lg-5 cl36"
+              ><i class="fa fa-rocket me-1 p-1"></i>CONTACT US</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <marquee
+                class="cl32"
+                behavior="scroll"
+                direction="up"
+                scrollamount="6"
+              >
+                <img class="img-fluid" src="images/m1.webp" />
+              </marquee>
+            </div>
+            <div class="col-4 ps-0 pe-0">
+              <marquee
+                class="cl32"
+                behavior="scroll"
+                direction="down"
+                scrollamount="6"
+              >
+                <img class="img-fluid" src="images/m2.webp" />
+              </marquee>
+            </div>
+            <div class="col-4 pe-lg-0">
+              <marquee
+                class="cl32"
+                behavior="scroll"
+                direction="up"
+                scrollamount="6"
+              >
+                <img class="img-fluid" src="images/m3.webp"
+              /></marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Articles -->
+      <div class="row justify-content-center bg3">
+        <div class="col-md-11 px-md-4 px-lg-0 pt-4 pt-md-5 pt-lg-0 pb-md-4">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9 pt-5 text-white">
+              <div class="pt-lg-3 ps-2 ps-md-0 cl40">Latest Articles</div>
+              <div class="py-4 cl41">
+                Every week we publish exclusive content on various topics.
+              </div>
+            </div>
+            <div class="col-lg-3 pt-lg-5 d-none d-lg-block">
+              <div class="pt-lg-5">
+                <button class="btn btn-primary mt-lg-5 float-lg-end">
+                  <i class="fa fa-message px-1"></i> VIEW ALL
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 pb-4 pb-lg-5 article">
+              <div><img class="img-fluid" src="images/A1.png" /></div>
+              <div class="cl37 cl38">Top UI/UX Design Trends</div>
+              <div class="row cl38 cl39 m-0 px-2 py-3">
+                <div class="col-6 col-lg-5">
+                  <i class="fa-solid fa-user pe-1"> </i>Nodesol Crop
+                </div>
+                <div class="col-6 col-lg-7 d-flex justify-content-end">
+                  <i class="fa-light fa-clock pt-1 pe-2"> </i>16 hours ago
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pb-4 pb-lg-5 article">
+              <div><img class="img-fluid" src="images/A2.png" /></div>
+              <div class="cl37 cl38">Exploring Vue.Js Lifecycle Hooks</div>
+              <div class="row cl38 cl39 m-0 px-2 py-3">
+                <div class="col-6 col-lg-5">
+                  <i class="fa-solid fa-user pe-1"> </i>Nodesol Crop
+                </div>
+                <div class="col-6 col-lg-7 d-flex justify-content-end">
+                  <i class="fa-light fa-clock pt-1 pe-2"> </i>2 days ago
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pb-4 pb-md-0 pb-lg-5 article">
+              <div><img class="img-fluid" src="images/A3.png" /></div>
+              <div class="cl37 cl38">
+                Top Reasons to Hire Quasar Developer for ...
+              </div>
+              <div class="row cl38 cl39 m-0 px-2 py-3">
+                <div class="col-6 col-lg-5">
+                  <i class="fa-solid fa-user pe-1"> </i>Nodesol Crop
+                </div>
+                <div class="col-6 col-lg-7 d-flex justify-content-end">
+                  <i class="fa-light fa-clock pt-1 pe-2"> </i>1 week ago
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pb-4 pb-md-0 pb-lg-5 article">
+              <div><img class="img-fluid" src="images/A4.png" /></div>
+              <div class="cl37 cl38">Comparison Between SPA and MPA</div>
+              <div class="row cl38 cl39 m-0 px-2 py-3">
+                <div class="col-6 col-lg-5">
+                  <i class="fa-solid fa-user pe-1"> </i>Nodesol Crop
+                </div>
+                <div class="col-6 col-lg-7 d-flex justify-content-end">
+                  <i class="fa-light fa-clock pt-1 pe-2"> </i>1 week ago
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 pt-md-4 d-lg-none">
+              <div class="ms-5 ps-4 pb-3 pb-md-5">
+                <button class="btn btn-primary ms-5 mt-md-2 mb-5 float-md-end">
+                  <i class="fa fa-message px-1"></i> VIEW ALL
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Let's Talk? -->
+      <div class="row justify-content-center bg-white">
+        <div class="col-11 px-md-4 col-md-11 px-lg-0 col-lg-8">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 mt-5 pt-4 pb-3 cl44">Let's Talk?</div>
+            <div class="col-lg-12 pb-5 cl45">
+              Talk to one of our consultants today and learn how to start
+              leveraging your business.
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <input
+                class="border rounded-1 p-2 ps-3 cl42"
+                type="text"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <input
+                class="border rounded-1 p-2 ps-3 cl42"
+                type="text"
+                placeholder="Email"
+              />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <input
+                class="border rounded-1 p-2 ps-3 cl42"
+                type="text"
+                placeholder="Phone"
+              />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <input
+                class="border rounded-1 p-2 ps-3 cl42"
+                type="text"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="col-12 mb-4">
+              <input
+                class="border rounded-1 p-2 ps-3 cl43"
+                type="text"
+                placeholder="Message"
+              />
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary mt-2 mb-5">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="row justify-content-center bg4">
+        <div class="col-11 col-lg-10">
+          <div class="row justify-content-center pb-5">
+            <div class="col-12 col-md-6 col-lg-3 cl49">
+              <div class="pb-4 pt-5">
+                <img class="img-fluid" src="images/logo.webp" width="150px" />
+              </div>
+              <div class="text-white pb-3 cl46">
+                Innovative Quality Solutions
+              </div>
+              <div class="c5 pb-4">
+                We are a values driven organization. Our values reflect the
+                thinking of our founder.
+              </div>
+              <div>
+                <i class="fa-brands fa-facebook-f pe-3 fs-4"></i>
+                <i class="fa-brands fa-linkedin-in pe-3 fs-4"></i>
+                <i class="fa-brands fa-twitter pe-3 fs-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 pb-lg-5 pe-lg-5 cl49">
+              <div class="pb-4 pt-5 text-white cl47">Get in Touch</div>
+              <div class="c5 fo">
+                <i class="fa-solid fa-phone pe-2"> </i> +1609-358-0777
+              </div>
+              <div class="c5 pt-2 fo">
+                <i class="fa-solid fa-envelope pe-2"> </i> support@nodesol.com
+              </div>
+              <div class="c5 pt-2 fo">
+                <i class="fa-solid fa-location-dot pe-2"></i> 473 Vetterlein
+                Ave, Hamilton, NJ 08619
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn text-white rounded-0 mt-3 bordergrad ps-3"
+                  style="border-width: 2px"
+                >
+                  <i class="fa-light fa-message-captions pe-2"></i>SEND A
+                  MESSAGE
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 cl49">
+              <div class="pb-4 pt-5 text-white cl47">Our Services</div>
+              <div class="c5 fo pb-3">Web Development</div>
+              <div class="c5 fo pb-3">Mobile Apps</div>
+              <div class="c5 fo pb-3">Dedicated Resources</div>
+              <div class="c5 fo pb-3">Consulting</div>
+              <div class="c5 fo pb-3">SEO & Digital Marketing</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 cl49">
+              <div class="pb-4 pt-5 text-white cl47">Popular Tags</div>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-2 me-1 cl48 fo1"
+                >
+                  Mobile
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-2 me-1 cl48 fo1"
+                >
+                  Development
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-2 me-1 cl48 fo1"
+                >
+                  Technology
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-2 me-1 cl48 fo1"
+                >
+                  App
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-2 me-1 cl48 fo1"
+                >
+                  Webapps
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-2 me-1 cl48 fo1"
+                >
+                  Business
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-2 me-1 cl48 fo1"
+                >
+                  Software
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-2 me-1 cl48 fo1"
+                >
+                  Industry
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Caption -->
+      <div class="row justify-content-center bg3 py-md-3">
+        <div class="col-12 c5" style="font-size: 14px; text-align: center">
+          Copyrights © 2023 NodeSol. All rights reserved by
+          <span class="c6"> Nodesol.</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
